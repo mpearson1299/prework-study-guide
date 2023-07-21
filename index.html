@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Prework Study Guide</title>
   </head>
   <body>
@@ -24,14 +25,37 @@
       <section class="card" id="css-section">
         <h2>CSS</h2>
         <ul>
-          <li>hhhhh</li>
+          <li>There are three ways to style a webpage using CSS: inline CSS, internal CSS style sheet, and external CSS style sheet.</li>
+          <li><b>inline styles</b> apply to a specific HTML tag, using a style attribute with a CSS rule to style a particular page element only. Example: 
+            (h1 style="color:red;">Prework Study Guide/h1 dont forget to add the "<>")</li>
+          <li>This <b>internal style sheet</b> contains CSS rules for the webpage in the head section of the HTML file. The rules only apply to that page, and you can configure CSS classes and IDs, which are used to identify elements, to style multiple elements in the page code. Example: (<head>
+            style
+              h1 {
+                color: red;
+              }
+            /style
+             /head)
+           The preceding CSS states that all h1 elements on the webpage will be red. dont forget the "<>"</li>
+          <li><b>External css style sheet</b> is preferred in most cases because it allows developers to keep all their CSS rules in a separate file, which makes design changes easier.
+            When using an external style sheet, we link the file using a <link> element placed in the HTML's <head>, as shown in the following code: 
+            (head
+             link rel="stylesheet" href="./assets/style.css" />
+            head)</li>
+          <li><b>Class attributes</b> allow us to share a CSS rule to any element we choose by assigning the rule to a class attribute with a class selector.</li>
+          <li>A margin indicates how much space we want around the outside of an element.</li>
+          <li>A padding indicates how much space we want around the content inside an element.</li>
         </ul>
       </section>
    
       <section class="card" id="git-section">
         <h2>Git</h2>
         <ul>
-          <li>Enter your Git notes here</li>
+          <li>git status: checks what branch we are currently on</li>
+          <li>git checkout -b branch-name: creates a new branch and switches to it</li>
+          <li>git clone [url]: retrieve an repository from a hosted location via url</li>
+          <li>git pull: fetch any commits from the tracking remote branch</li>
+          <li>git merge: merge the specified branch's history into the current one</li>
+          <li>It is a good habit to always pull the base branch into your feature branch before pushing up any code</li> 
         </ul>
       </section>
    
@@ -42,7 +66,6 @@
         </ul>
       </section>
     </main>
-
     <footer>
       <p>I can code!</p>
     </footer>
